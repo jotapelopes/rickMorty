@@ -1,12 +1,54 @@
 <style>
-  .container{
-    display: inline-flex;
+  h1{
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 1500px;
+    margin: 0 auto;
+  }
+
+  .card {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+    border-radius: 8.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+
+  .card-img-top {
+    border-top-left-radius: 8.5px;
+    border-top-right-radius: 8.5px;
+    object-fit: cover;
+    height: 200px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .list-group-item {
+    padding: 5px 0;
+    font-size: 0.9rem;
   }
 </style>
 
 <template>
   <main>
+    <h1>Lista de personagens</h1>
     <div class="container">
       <div v-for="character in characters" :key="character.id">
         <div class="card" style="width: 18rem;">
