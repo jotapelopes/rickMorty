@@ -42,7 +42,7 @@
 <template>
   <div class="container container-about">
     <h1 id="title-about">Sobre o aluno</h1>
-    <p>Sou o João Pedro dos Santos Lopes, tenho 19 anos. Sou aluno do curso de ADS do terceiro termo. <br> Meu RA: 1963012</p>
+    <p>Sou o João Pedro dos Santos Lopes, tenho 19 anos. Sou aluno do curso de ADS do terceiro termo da UNIMAR. <br> Meu RA: 1963012</p>
 
     <p>
       <button class="btn btn-primary btn-about" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
